@@ -1,0 +1,46 @@
+@keyframes tipsy {
+    0 {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  
+  span {
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  span:before,
+  span:after {
+    content: '';
+    padding: .8em .4em;
+    position: absolute;
+    left: 50%;
+    width: 110%;
+    top: 50%;
+    display: block;
+    border: 15px solid white;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 3s infinite alternate ease-in-out tipsy;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  span:before {
+    border-color: #ddd #ddd rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  span:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ddd #ddd;
+  }
+  
