@@ -1,0 +1,83 @@
+em {
+  font-style: normal;
+  position: relative;
+}
+
+em::after {
+  border-bottom: 0.125em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(5deg);
+}
+
+#primeiro {
+    white-space: pre;
+    font-family: 'nimbus_sans_becker_pblaRg';
+    font-size: 25px;
+    color:red;
+    text-align: right;
+    margin-right: 50%;
+    line-height: 20%;
+    position:relative;
+}
+
+#segundo {
+    font-family: 'nimbus_sans_d_otlight';
+    text-align: left;
+    margin-left: 100%;
+    position:relative;
+}
+
+
+
+span {
+    display: inline-block;
+    font-size: 25px;
+    transform: rotate(12.5deg);
+}
+
+
+.flexer {
+    display: flex;
+    position: relative;
+}
+
+
+
+#terceiro {
+  font-family: 'nimbus_sans_becker_pblaRg';
+  white-space: pre;
+  font-size: 25px;
+  text-align: left;
+  padding: 20px;
+}
+
+#svg {
+  flex: 30%;
+  padding: 20px;
+}
+
+#diomao {
+  position: absolute;
+  transform: rotate(30deg);
+  margin-left: -5%;
+  width: 30%;
+}
+
+
+#larr {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+
+}
+
+#rarr {
+  position: fixed;
+  top: 5px;
+  right: 3px;
+}

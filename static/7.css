@@ -1,0 +1,36 @@
+.uniq {
+    color: red;
+    white-space: pre;
+    font-family: 'nimbus_sans_becker_pblaRg';
+    margin-left: 10%;
+    margin-top: -5%;
+}
+
+#primeiro {
+    white-space: pre;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: -7%;
+}
+
+#segundo {
+  font-family: 'nimbus_sans_becker_pblaRg';
+    white-space: pre;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 52%;
+    margin-top: -38%;
+  }
+
+  #rarr {
+    position: fixed;
+    top: 0;
+    right: 5px;
+  }
+  
+  #larr {
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+  }
